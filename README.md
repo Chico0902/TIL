@@ -29,3 +29,4 @@
  5. 올라감 
     - 만약 pull하려면 **git pull origin master**
   
+  
