@@ -6,6 +6,7 @@ bingo = [list(map(int, input().split())) for _ in range(5)]
 speak = [list(map(int, input().split())) for _ in range(5)]
 
 c_cnt = 0
+flag = 0
 for i in range (5):
     for j in range(5):
         for k in range(5):
@@ -33,8 +34,10 @@ for i in range (5):
             dae2.append(bingo[(-p)-1][p])
         if sum(dae2) == 0:
             cnt += 1
-        print(dae1,sero,dae2,cnt)
-        if cnt == 3:
+        if cnt >= 3:
             print(c_cnt)
+            flag = 1
             break
+    if flag == 1:
+        break
 
