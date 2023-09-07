@@ -1,0 +1,54 @@
+<title>Login Page</title>
+<style>
+    #username:focus,
+    #password:focus {
+        border: 2px solid blue;
+        outline: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    label {
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+
+<body>
+    <label for='username'>USERNAME :</label>
+    <input type="text" id="username" name="username" placeholder="아이디를 입력해주세요"><br>
+    <form>
+        <label for='password'>PWD :</label>
+        <input type="password" id="password" name="password"><br>
+
+        <input type="submit" value="로그인">
+    </form>
+
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <div>
+      <label for="id">USERNAME :</label>
+      <input type="text"id="id" placeholder="아이디를 입력 해 주세요">
+    </div>
+    <div>
+      <label for="pwd">PWD :</label>
+      <input type="text" id="pwd">
+      <button>로그인</button>
+    </div>
+  </form>
+</body>
+</html> -->
