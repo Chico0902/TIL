@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .headbox{
+            width: 70%;
+            height: 100px;
+            background-color: teal;
+            margin: 0 auto;
+            align-items: flex-end;
+            display: flex;
+        }
+        .list{
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+        }
+        .nav-link{
+            color:white;
+            font-weight: 900;
+
+        }
+        a {
+            text-decoration: none;
+        }
+        .p { 
+            margin-left: 30px;
+            font-style: italic;
+            color: plum;
+        }
+        .img1{
+            width: 200px;
+            height: 100px;
+            display: flex;
+        }
+        .img2{
+            width: 400px;
+            height: 300px;
+            display: flex;
+            border-radius: 10%;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .main1{
+            width: 70%;
+            height: 500px;
+            margin: 0 auto;
+            margin-top: 100px;
+            /* align-items: flex-end; */
+            display: flex;
+            flex-direction: column;
+        }
+        .main2{
+            width: 70%;
+            height: 500px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            /* align-items: flex-end; */
+            display: flex;
+            flex-direction: column;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .sawasul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .sawasul > p {
+            margin-left: 2rem;
+        }
+        footer{
+            /* display: flex; */
+            font-size: smaller;
+            /* text-align: right; */
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headbox">
+            <div>
+                <img class="img1" src="https://i.ytimg.com/vi/nqW8vJTiN8I/maxresdefault.jpg" >
+            </div>
+            <div class="list">
+                <ul class="nav-item">
+                    <a class="nav-link" href="#">단체 여행</a>
+                </ul>
+                <ul class="nav-item">
+                    <a class="nav-link" href="#">맞춤 여행</a>
+                </ul>
+                <ul class="nav-item">
+                    <a class="nav-link" href="#">갤러리</a>
+                </ul>
+                <ul class="nav-item">
+                    <a class="nav-link" href="#">문의하기</a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main1">
+            <p class="p">귀여운 강아지</p>
+            <div class="sawasul">
+            <img class="img2" src="https://t1.daumcdn.net/cfile/tistory/25358343579FC72B12" alt="kawai">
+            <p>어디갔닝</p>
+            </div>
+        </div>
+        <div class="main2">    
+            <p class="p">보고가세용</p>
+            <img class="img2" src="https://watermark.lovepik.com/photo/20211202/large/lovepik-cute-dog-pomeranian-picture_501430504.jpg" alt="kawai2">
+        </div>
+    
+    </main>
+    <footer>
+        <p>제주관광공사</p>
+        <p>제작지원 : 최근영</p>
+        <p>문의사항 010-5169-3434</p>
+
+
+    </footer>
+
+
+
+    
+
+
+    
+</body>
+</html>

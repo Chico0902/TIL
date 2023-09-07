@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width:500px;
+            height: 200px;
+            background-color: white;
+            border : 1px solid black;
+        }
+        /* 웹브라우저를 기준 */
+        #absolute{
+            position :absolute;
+            left: 50px;
+            top: 50px;
+        }
+        /* 부모요소를 기준으로 */
+        #relative{
+            position: relative;
+            left: 100px;
+            top: 200px;
+        }
+        #fixed{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="absolute">똥멍청이</p>
+    <p id="relative">한진우바보</p>
+    <p id="fixed"></p>
+</body>
+</html>
