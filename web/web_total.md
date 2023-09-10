@@ -88,6 +88,43 @@
 
   ### 3. block-inline
 
-    - 
+    - block 요소는 기본적으로 부모 요소의 너비 100%를 차지하며, 자식 콘텐츠의 최대 높이를 취함.
+    - block 요소의 총 너비 및 높이는 content + padding + border width/height임.
+    - inline 요소는 자체 콘텐츠의 너비와 높이만 차지가능(width,height 속성 지정 불가)
+    - 이미지는 인라인이지만 width나 height로 크기변경 가능
+    - inline 요소 크기 제어하려면 block으로 변경하거나 inline-block 요소로 설정해야함.
   
+  ### 4. inline-block
+
+    - inline-block은 컨텐츠 길이만큼 블록으로 만듬
+    - 그래서 width도 주고 height도 주고 할수잇음
   
+  ### 5. none
+
+    - display : none 하면 아예 출력을 안함 자리도 차지안함
+    - 그냥 세상에서 사라지는거임
+
+## 03 layout-position
+
+  ### 1. position
+
+  - 포지션을 정해줌
+  - static 이 기본
+  - absloute는 절대값으로 줌 근데 자리차지안함.(그림위에 글 넣을때 주로 씀) 
+  - relative 는 자기자리 기준으로 움직임
+    - 릴레이티브랑 앱솔이랑 섞어서는 잘 안쓴대
+ 
+  ### 2. 스티키
+
+  - 스태틱 속성과 픽스드 속성을 둘다 가지고 있는것
+  ```css
+      .sticky {
+      position: sticky;
+      top: 0;
+      background-color: lightblue;
+      padding: 20px;
+      border: 2px solid black;
+      }
+  ```
+  - 이렇게 씀
+  - 이렇게쓰면 top이 0이 되면 스태틱에서 픽스드로 바뀌는것

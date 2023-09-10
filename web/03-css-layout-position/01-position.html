@@ -13,7 +13,7 @@
     }
 
     .container {
-      /* position: relative; */
+      position: relative;
       height: 300px;
       width: 300px;
       border: 1px solid black;
@@ -26,28 +26,31 @@
     }
 
     .static {
+      display: inline-block;
       position: static; /*기본값*/
       background-color: lightcoral;
     }
 
     .absolute {
-      position: absolute;
+      display: inline-block;
+      /* position: absolute; */
       background-color: lightgreen;
-      /* top: 100px; */
-      /* left: 100px; */
+      /* top: 50px; */
+      /* left: 400px; */
     }
 
     .relative {
-      /* position: relative; */
-      background-color: lightblue;
-      /* top: 100px; */
-      /* left: 100px; */
+      display: inline-block;
+      position: relative;
+      background-color: rgba(173, 216, 230, 0.273);
+      top: 100px;
+      /* left: 400px;  */
     }
 
     .fixed {
-      /* position: fixed; */
+      position: fixed;
       background-color: gray;
-      /* top: 0; */
+      /* top: 100px; */
       /* right: 0; */
     }
   </style>
@@ -55,8 +58,7 @@
 
 <body>
   <div class="container">
-    <div class="box static">Static</div>
-    <div class="box absolute">Absolute</div>
+    <div class="box static">Static</div><div class="box absolute">Absolute</div>
     <div class="box relative">Relative</div>
     <div class="box fixed">Fixed</div>
   </div>
