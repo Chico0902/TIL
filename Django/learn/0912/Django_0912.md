@@ -121,3 +121,17 @@ views.py에서 template을 인식 못할떄
 1. templates 스펠링 체크
 2. 서버 껐다 켠다.
 3. setting.py installed_app등록 했는지
+
+
+action & method
+데이터를 어디(action)로 어떤 방식(method)으로 요청할지
+
+'input' element : 사용자의 데이터를입력 받을 수 있는 요소 (type 속성 값에 따라 다양한 유형의 입력 데이터를 받음)
+
+'name' attribute -> input의 핵심 속성 : 서버로 보내는 키 (입력한 데이터에 붙이는 이름)
+
+## form 데이터를 가져오는 방법
+ - request.GET.get('message')
+
+## variable Routing
+- url의 일부에 변수를 포함시키는 것
