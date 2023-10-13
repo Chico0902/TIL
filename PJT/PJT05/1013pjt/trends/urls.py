@@ -9,5 +9,5 @@ urlpatterns = [
     path('crawling', views.crawling, name='crawling'),
     path('crawling/histogram/', views.crawling_histogram, name='crawling_histogram'),
     path('crawling/advanced/', views.advanced, name='advanced'),
-    path('keyword/delete/', views.delete, name='delete'),
+    path('keyword/delete/<int:pk>/', views.delete, name='delete'),
 ]
