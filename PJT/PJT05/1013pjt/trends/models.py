@@ -7,7 +7,7 @@ class Keyword(models.Model):
     created_at = models.DateTimeField(auto_now_add= True)
 
 class Trend(models.Model):
-    Name = models.TextField()
+    name = models.TextField()
     result = models.IntegerField()
     search_period = models.TextField()
     created_at = models.DateTimeField(auto_now_add= True)
