@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ person.username }}님의 프로필페이지</h1>
+<br>
+<br>
+<hr>
+<p>회원번호 : {{ person.id }}</p>
+<p>유저이름 : {{ person.username }}</p>
+<p>가입날짜 : {{ person.date_joined }}</p>
+<p></p>
+
+{% endblock content %}
