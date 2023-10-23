@@ -10,7 +10,7 @@ urlpatterns = [
     # 로그아웃
     path('logout/', views.logout, name="logout"),
     # 팔로우 데이터 저장 및 팔로우 데이터 삭제
-    # path('<user_pk>/follow/', views.follow, name="follow")
-    path('<user_pk>', views.profile, name='profile')
+    path('<int:user_pk>/follow/', views.follow, name="follow"),
+    path('<int:user_pk>', views.profile, name='profile')
 
 ]

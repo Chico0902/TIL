@@ -3,6 +3,6 @@ from django.db import models
 
 
 class User(AbstractUser):
-    followings = models.ManyToManyField("accounts.User")
+    followings = models.ManyToManyField('self', symmetrical=False, related_name='followers')
     
     
