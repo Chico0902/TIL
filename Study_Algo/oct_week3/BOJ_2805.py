@@ -61,13 +61,28 @@ input = sys.stdin.readline
 # 입력받기
 N, M = map(int, input().split())
 arr = list(map(int, input().split()))
-arr.sort()
+# arr.sort()
+# 이거때문인가
+
 
 # 나무 자르기
-start, end = 0, arr[-1]
+# start, end = 1, arr[-1]
+start, end = 1, max(arr)
 
-sumtree = 0
+
 while start <=end:
+    sumtree = 0
     mid = (start + end) // 2
-    for i in range(N):
-        sumtree +=
+    for i in arr:
+        if i > mid:
+            sumtree += i-mid
+
+    # if sumtree <= M: // 이건왜안될까
+    if sumtree < M:
+        end = mid -1
+    else:
+        start = mid + 1
+print(end)
+
+#시간초과
+

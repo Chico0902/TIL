@@ -11,15 +11,22 @@
     // for .. of 문으로 코드 작성
     const lensco = scores.length
     console.log(lensco)
+    let sumsco = 0
     for (const score of scores) {
-      score += score
+      sumsco += score 
     }
-    console.log(score)
+    console.log(sumsco)
+    let avgsco = 0
+    avgsco = sumsco/lensco
+    console.log(avgsco)
 
     // whil문으로 코드 작성
-    // while (scores) {
-    //   console.log(scores)
-    // }
+    let i = 0
+    scores.reverse()
+    while (i < lensco ) {
+      console.log(scores[i])
+      i += 1
+    }
   </script>
 </body>
 </html>
