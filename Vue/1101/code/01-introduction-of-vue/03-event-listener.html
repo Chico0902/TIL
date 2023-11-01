@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="'app">
+    <button v-on:click="increment">{{ count }}</button>
+    <!-- <button @click="increment">{{ count }}</button> -->
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue
+
+    const app = createApp({
+      setup(){
+        const count = ref(0)
+        const increment = function () {
+          count.value++
+          // 카운트의 밸류로 들어가야지 ref의 0을 뽑아낼 수 있음
+          // 카운트만 있으면 ref 객체임, 객체 안에 있는 값만 바꾸는 것이기 때문에 재할당 아님
+        }
+        return{
+          count,
+          increment
+        }
+      }
+    })
+
+    app.mount('#app')
+  </script>
+</body>
+
+</html>
