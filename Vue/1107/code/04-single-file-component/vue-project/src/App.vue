@@ -5,6 +5,7 @@
 
 <script setup>
 // import MyComponent from './components/MyComponent.vue'
+// import MyComponent from 'src/components/MyComponent.vue'
 import MyComponent from '@/components/MyComponent.vue'
 
 </script>

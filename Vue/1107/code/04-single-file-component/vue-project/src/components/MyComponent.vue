@@ -1,13 +1,15 @@
 <template>
-    <div>
-        <h2>MyComponent</h2>
-        <MyComponentItem />
-        
-    </div>
+  <div>
+    <h2>MyComponent</h2>
+    <MyComponentItem />
+    <MyComponentItem />
+    <MyComponentItem />
+  </div>
 </template>
 
 <script setup>
-import MyComponentItem from '@/components/MyComponentItem.vue';
+import MyComponentItem from '@/components/MyComponentItem.vue'
+
 </script>
 
 <style scoped>

@@ -1,11 +1,11 @@
 <template>
-    <p>MyComponentItem</p>
+  <p>MyComponentITEM</p>
 </template>
 
 <script setup>
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
