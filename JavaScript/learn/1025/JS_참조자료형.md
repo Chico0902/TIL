@@ -4,8 +4,11 @@
 
 ## 함수 정의 2가지 방법
 1. 선언식
+   
   ![img1](image/image1.png)
+
 2. 표현식
+   
   ![img2](image/image2.png)
 
 ### 표현식 특징
@@ -25,10 +28,12 @@
 ### 매개변수와 인자의 개수 불일치
 1. 매개변수 개수 > 인자 개수
    - 누락된 인자는 undefined로 할당
-  ![img3](image/image3.PNG)
-2. 매개변수 개수 < 인자 개수
+  
+     ![img3](image/image3.PNG)
+1. 매개변수 개수 < 인자 개수
    - 초과 입력한 인자는 사용하지 않음
-  ![img4](image/image4.PNG)
+  
+      ![img4](image/image4.PNG)
 
 ### 전개 구문
 spread syntax -> '...'
@@ -66,10 +71,10 @@ spread syntax -> '...'
 - ket 이름에 띄어쓰기 등 같은 구분자가 있으면 대괄호 접근만 가능
 
 - 조회 & 추가
-  ![img5](image5.png)
+  ![img5](image/image5.png)
 
 - 수정 & 삭제
-- ![img6](image/image6.PNG)
+   ![img6](image/image6.PNG)
 
 #### in 연산자
 - 속성이 객체에 존재하는지 여부를 확인
