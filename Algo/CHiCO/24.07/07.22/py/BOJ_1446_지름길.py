@@ -121,6 +121,12 @@ distances[0] = 0
 priority_queue = [(0, 0)]
 
 # 다익스트라 알고리즘 실행
+shortcut_dict = {}
+for start, end, length in shortcuts:
+    if start not in shortcut_dict:
+        shortcut_dict[start] = []
+    shortcut_dict[start].append((end, length))
+
 while priority_queue:
     current_distance, current_node = heapq.heappop(priority_queue)
 
@@ -135,8 +141,8 @@ while priority_queue:
             heapq.heappush(priority_queue, (next_distance, current_node + 1))
 
     # 지름길 처리
-    for start, end, length in shortcuts:
-        if current_node == start and end <= d:
+    if current_node in shortcut_dict:
+        for end, length in shortcut_dict[current_node]:
             next_distance = current_distance + length
             if next_distance < distances[end]:
                 distances[end] = next_distance
