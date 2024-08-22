@@ -14,7 +14,6 @@ for _ in range(M):
         see.append(a)
 
 see.sort()
-print(see)
 print(len(see))
 for ans in see:
     print(ans)
