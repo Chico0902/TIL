@@ -13,10 +13,27 @@
 # 출력
 # 입력된 자연수 N을 몇 개의 연속된 자연수의 합으로 나타내는 가지수를 출력하시오
 # 
-import math
+N = int(input().strip())
 
-N = int(input())
+limit = N // 2  # end의 상한 (길이>=3인 해는 end가 항상 여기 이하)
+count = 0
 
-mid =round(N/2)
+start = 1
+current = 0
 
-print(mid)
+for end in range(1, limit + 1):
+    current += end
+    while current > N and start <= end:
+        current -= start
+        start += 1
+    if current == N:
+        count += 1
+
+# 보정: (limit로는 잡히지 않는 케이스들)
+# 1) 길이 1: [N]
+count += 1
+# 2) 길이 2: k+(k+1)=N 은 N이 홀수이고 N>=3일 때만
+if N % 2 == 1 and N >= 3:
+    count += 1
+
+print(count)
